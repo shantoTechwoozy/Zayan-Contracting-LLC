@@ -10,18 +10,18 @@ const Contact: React.FC = () => {
                         Contact Information
                     </h2>
                     <div className="mt-8 text-left">
-                        <p className="text-lg font-semibold">Fully Licensed & Insured</p>
-                        <p className="mt-2">
+                        <p className="text-lg font-semibold text-gray-800">Fully Licensed & Insured</p>
+                        <p className="mt-2 text-gray-800">
                             <strong>Nurul Karim</strong> <br /> President & CEO
                         </p>
-                        <p className="mt-2">
+                        <p className="mt-2 text-gray-800">
                             <strong>Zayan Contracting LLC</strong> <br /> General Contractor
                         </p>
-                        <p className="mt-2">Free Estimates</p>
-                        <p className="mt-2">zayancontracting2024@gmail.com</p>
-                        <p className="mt-2">82 Louisa St. Brooklyn NY 11218</p>
-                        <p className="mt-2">
-                            <a href="tel:929-539-9509">929-539-9509</a>
+                        <p className="mt-2 text-gray-800">Free Estimates</p>
+                        <p className="mt-2 text-gray-800">zayancontracting2024@gmail.com</p>
+                        <p className="mt-2 text-gray-800">82 Louisa St. Brooklyn NY 11218</p>
+                        <p className="mt-2 text-gray-800">
+                            <a href="tel:929-539-9509" className="text-blue-600 hover:underline">929-539-9509</a>
                         </p>
                     </div>
                     <div className="mt-6">
