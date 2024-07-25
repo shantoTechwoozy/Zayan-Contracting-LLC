@@ -17,11 +17,13 @@ const Footer: React.FC = () => {
                     <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
-                                <h2 className="text-4xl font-bold text-gray-400">Get the latest news!</h2>
+                                <h2 className="text-4xl font-bold text-gray-400">Zayan Contracting LLC</h2>
 
                                 <p className="mt-4 text-gray-300">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-                                    molestias.
+                                    Fully Licensed & Insured
+                                    Nurul Karim
+                                    President & CEO
+                                    General Contractor
                                 </p>
                             </div>
                         </div>

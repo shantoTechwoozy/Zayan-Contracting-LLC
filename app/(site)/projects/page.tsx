@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ImageGallery: React.FC = () => {
+const Projects: React.FC = () => {
     return (
-        <section className="bg-white py-8 mb-12">
+        <section className="bg-white py-8">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <span className="relative flex justify-center py-8 mb-10">
                     <div
@@ -58,4 +58,4 @@ const ImageGallery: React.FC = () => {
     );
 }
 
-export default ImageGallery;
+export default Projects;
