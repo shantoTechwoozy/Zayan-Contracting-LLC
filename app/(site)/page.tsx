@@ -15,7 +15,6 @@ export default function Home() {
       <Service/>
       <ImageGallery/>
       <Contact/>
-      <Footer/>
     </main>
   );
 }
