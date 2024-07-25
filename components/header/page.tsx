@@ -48,18 +48,12 @@ const Header: React.FC = () => {
 
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <ClerkLoaded>
-                  <SignedIn>
-                    <UserButton />
-                  </SignedIn>
-                  <SignedOut>
-                    <SignInButton mode="modal">
-                      <button className="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90">
-                        Sign In
-                      </button>
-                    </SignInButton>
-                  </SignedOut>
-                </ClerkLoaded>
+                <a
+                  className="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                  href="#"
+                >
+                  Login
+                </a>
                 {/* <div className="hidden sm:flex">
                   <a
                     className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600 transition hover:bg-gray-200"

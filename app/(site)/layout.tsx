@@ -4,13 +4,7 @@ import "@/app/globals.css";
 import Footer from "@/components/footer/page";
 import Header from "@/components/header/page";
 import Announcement from "@/components/announcement/page";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +18,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
         <Announcement/>
@@ -33,6 +26,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-    </ClerkProvider>
   );
 }
