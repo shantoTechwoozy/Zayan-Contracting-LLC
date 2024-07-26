@@ -1,45 +1,34 @@
 import React from 'react';
-import Image from 'next/image';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaIdBadge } from "react-icons/fa";
 
 const Contact: React.FC = () => {
     return (
-        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 py-8 px-4 sm:px-6 lg:px-8 shadow-lg">
-            <div className="flex items-center justify-center sm:justify-start">
-                <div className="max-w-lg mx-auto text-center sm:text-left m-2">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 md:text-4xl">
-                        Contact Us
-                    </h2>
-                    <div className="text-left">
-                        <p className="text-lg font-semibold text-gray-800">Fully Licensed & Insured</p>
-                        <p className="mt-2 text-gray-800">
-                            <strong>Nurul Karim</strong> <br /> President & CEO
+        <section className="overflow-hidden bg-[url('/contact.jpg')] bg-cover bg-top bg-no-repeat">
+            <div className="bg-black/60 p-4 md:p-6 lg:px-8 lg:py-12 flex items-center justify-center min-h-[40vh]">
+                <div className="relative bg-white/20 backdrop-blur-md p-4 md:p-6 lg:px-8 lg:py-12 rounded-lg shadow-lg text-center text-white max-w-2xl mx-auto">
+                    <h2 className="text-3xl font-extrabold sm:text-4xl md:text-5xl">Contact Us</h2>
+
+                    <div className="max-w-lg mx-auto mt-4 md:mt-6 space-y-2">
+                        <p className="text-sm font-bold">Fully Licensed & Insured</p>
+                        <p className="text-sm font-semibold">Nurul Karim, President & CEO</p>
+                        <p className="text-sm font-semibold">Zayan Contracting LLC, General Contractor</p>
+                        <p className="text-sm font-bold mt-2">Our Services:</p>
+                        <p className="text-base">
+                            Roofing, Waterproofing, Steam Cleaning, Brick Pointing, Brownstone Repair, All kinds of Cement Work, Framing & Carpentry, Painting Exterior & Interior, Plumbing & Electric work
                         </p>
-                        <p className="mt-2 text-gray-800">
-                            <strong>Zayan Contracting LLC</strong> <br /> General Contractor
-                        </p>
-                        <p className="mt-2 text-gray-800">Free Estimates</p>
-                        <p className="mt-2 text-gray-800">zayancontracting2024@gmail.com</p>
-                        <p className="mt-2 text-gray-800">82 Louisa St. Brooklyn NY 11218</p>
+                        <p className="text-sm font-semibold">zayancontracting2024@gmail.com</p>
+                        <p className="text-sm font-semibold">82 Louisa St. Brooklyn NY 11218</p>
                     </div>
-                    <div className="mt-6">
+
+                    <div className="mt-4 sm:mt-6">
                         <a
                             href="tel:929-539-9509"
-                            className="inline-block rounded bg-blue-600 px-8 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                            className="inline-block rounded-full bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                         >
                             Call Now
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div className="relative h-40 sm:h-[400px]">
-                <Image
-                    alt="Contact Image"
-                    src="/contact.jpg"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg"
-                />
             </div>
         </section>
     );

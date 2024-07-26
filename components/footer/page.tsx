@@ -55,23 +55,23 @@ const Footer: React.FC = () => {
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> 1on1 Coaching </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Roofing </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Company Review </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Water Proofing </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Accounts Review </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Steam Cleaning </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> HR Consulting </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Brick Pointing </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> SEO Optimisation </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> BrownStone Repair </a>
                                 </li>
                             </ul>
                         </div>
@@ -135,15 +135,19 @@ const Footer: React.FC = () => {
                         </div>
 
                         <div className="col-span-2 sm:col-span-1">
-                            <p className="font-medium text-gray-400">Downloads</p>
+                            <p className="font-medium text-gray-400">Projects</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Marketing Calendar </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Complete Projects </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> SEO Infographics </a>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Ongoing Projects </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Running Projects </a>
                                 </li>
                             </ul>
                         </div>

@@ -2,9 +2,8 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section
-            className="overflow-hidden bg-[url('/banner.jpg')] bg-cover bg-top bg-no-repeat"
-        >
+
+        <section className="relative overflow-hidden bg-[url('/banner.jpg')] bg-cover bg-top bg-no-repeat">
             <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
                 <div className="text-center">
                     <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
