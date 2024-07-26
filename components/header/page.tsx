@@ -1,14 +1,15 @@
 "use client";
-import React from 'react';
-import {
-  ClerkLoaded,
-  ClerkLoading,
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton
-} from "@clerk/nextjs";
+import React, { useState } from 'react';
+
 const Header: React.FC = () => {
+  // State to manage mobile menu visibility
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Toggle mobile menu visibility
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(prev => !prev);
+  };
+
   return (
     <header className="bg-white shadow-md">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -56,7 +57,8 @@ const Header: React.FC = () => {
                 </a>
                 {/* <div className="hidden sm:flex">
                   <a
-                    className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600 transition hover:bg-gray-200"
+                    className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600```jsx
+                    transition hover:bg-gray-200"
                     href="#"
                   >
                     Register
@@ -64,7 +66,10 @@ const Header: React.FC = () => {
                 </div> */}
               </div>
               <div className="block md:hidden">
-                <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700">
+                <button 
+                  onClick={toggleMobileMenu} 
+                  className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -80,6 +85,62 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile menu drawer */}
+      <div 
+        className={`fixed inset-0 z-50 bg-white p-6 shadow-lg transition-transform transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <button 
+          onClick={toggleMobileMenu}
+          className="text-gray-600 hover:text-gray-700"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <nav aria-label="Mobile" className="mt-6">
+          <ul className="space-y-4">
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/"> Home </a>
+            </li>
+            {/* <li>
+              <a className="text-gray-700 hover:text-gray-900" href="#"> About </a>
+            </li> */}
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/services"> Services </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/projects"> Projects </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/contact"> Contact </a>
+            </li>
+            <li>
+              <a
+                className="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                href="#"
+              >
+                Login
+              </a>
+            </li>
+            {/* <li>
+              <a
+                className="block rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600 transition hover:bg-gray-200"
+                href="#"
+              >
+                Register
+              </a>
+            </li> */}
+          </ul>
+        </nav>
       </div>
     </header>
   );
