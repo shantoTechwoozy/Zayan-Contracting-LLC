@@ -8,11 +8,13 @@ const Announcement: React.FC = () => {
                 <a href="#" className="inline-block underline">Check out now!</a>
             </p>
 
-            <button
+            <a
                 aria-label="Dismiss"
+                href="tel:929-539-9509"
                 className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20 text-sm"
             >Click Here
-            </button>
+            </a>
+
         </div>
     );
 };
