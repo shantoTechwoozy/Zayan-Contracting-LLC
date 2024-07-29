@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -17,7 +18,13 @@ const Footer: React.FC = () => {
                     <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
-                                <h2 className="text-4xl font-bold text-gray-400">Zayan Contracting LLC</h2>
+                            <Image
+                src={`/logo.png`}
+                alt="logo"
+                width={240}
+                height={60}
+                className="w-[350px] sm:w-48 md:w-64 lg:w-72 dark:hidden"
+              />
 
                                 <p className="mt-4 text-gray-300">
                                     Fully Licensed & Insured
