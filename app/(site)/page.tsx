@@ -10,11 +10,11 @@ import Announcement from "@/components/announcement/page";
 export default function Home() {
   return (
     <main >
-      <Hero/>
-      <CTA/>
-      <Service/>
-      <ImageGallery/>
-      <Contact/>
+      <Hero />
+      <CTA />
+      <Service />
+      <ImageGallery />
+      <Contact />
     </main>
   );
 }

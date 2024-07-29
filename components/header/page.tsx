@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { ClerkLoaded, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/nextjs';
 
 const Header: React.FC = () => {
   // State to manage mobile menu visibility
@@ -49,21 +50,21 @@ const Header: React.FC = () => {
 
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <a
-                  className="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
-                  href="#"
-                >
-                  Login
-                </a>
-                {/* <div className="hidden sm:flex">
-                  <a
-                    className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600```jsx
-                    transition hover:bg-gray-200"
-                    href="#"
-                  >
-                    Register
-                  </a>
-                </div> */}
+                <ClerkLoaded>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                  <SignedOut>
+                    <SignInButton mode="modal">
+                      <a
+                        className="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                        href="#"
+                      >
+                        Login
+                      </a>
+                    </SignInButton>
+                  </SignedOut>
+                </ClerkLoaded>
               </div>
               <div className="block md:hidden">
                 <button 
@@ -124,21 +125,22 @@ const Header: React.FC = () => {
               <a className="text-gray-700 hover:text-gray-900" href="/contact"> Contact </a>
             </li>
             <li>
-              <a
-                className="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
-                href="#"
-              >
-                Login
-              </a>
+              <ClerkLoaded>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+                <SignedOut>
+                  <SignInButton mode="modal">
+                    <a
+                      className="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                      href="#"
+                    >
+                      Login
+                    </a>
+                  </SignInButton>
+                </SignedOut>
+              </ClerkLoaded>
             </li>
-            {/* <li>
-              <a
-                className="block rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600 transition hover:bg-gray-200"
-                href="#"
-              >
-                Register
-              </a>
-            </li> */}
           </ul>
         </nav>
       </div>

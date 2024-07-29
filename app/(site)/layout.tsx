@@ -4,6 +4,8 @@ import "@/app/globals.css";
 import Footer from "@/components/footer/page";
 import Header from "@/components/header/page";
 import Announcement from "@/components/announcement/page";
+import { ClerkProvider, RedirectToSignIn } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +19,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get environment variables
+  const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API || '';
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Announcement/>
-        <Header />
-        {children}
-        <Footer />
+        <ClerkProvider>
+          <Announcement />
+          <Header />
+          {children}
+          <Footer />
+        </ClerkProvider>
       </body>
     </html>
   );
