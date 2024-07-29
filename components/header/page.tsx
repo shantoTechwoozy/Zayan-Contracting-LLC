@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                 alt="logo"
                 width={240}
                 height={60}
-                className="w-[150px] sm:w-48 md:w-64 lg:w-64 dark:hidden"
+                className="w-[50px] sm:w-48 md:w-64 lg:w-[90px] dark:hidden"
               />
             </a>
           </div>
