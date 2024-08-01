@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="relative w-full h-64">
                         <Image
-                            src="/g1.jpg"
+                            src="/project/p-1.jpg"
                             alt="Image 1"
                             layout="fill"
                             objectFit="cover"
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
                     </div>
                     <div className="relative w-full h-64">
                         <Image
-                            src="/g2.jpg"
+                            src="/project/p-2.jpg"
                             alt="Image 2"
                             layout="fill"
                             objectFit="cover"
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                     </div>
                     <div className="relative w-full h-64">
                         <Image
-                            src="/g3.jpg"
+                            src="/project/p-3.jpg"
                             alt="Image 3"
                             layout="fill"
                             objectFit="cover"
@@ -45,12 +45,24 @@ const Projects: React.FC = () => {
                     </div>
                     <div className="relative w-full h-64">
                         <Image
-                            src="/g4.jpg"
+                            src="/project/p-4.jpg"
                             alt="Image 4"
                             layout="fill"
                             objectFit="cover"
                             className="rounded-lg shadow-lg"
                         />
+                    </div>
+
+                    <div className="relative col-span-full w-full">
+                        <div className="relative w-full h-64">
+                            <Image
+                                src="/g4.jpg"
+                                alt="Image 5"
+                                layout="fill"
+                                objectFit="cover"
+                                className="w-full rounded-lg shadow-lg"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
