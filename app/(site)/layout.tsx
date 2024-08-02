@@ -4,8 +4,8 @@ import "@/app/globals.css";
 import Footer from "@/components/footer/page";
 import Header from "@/components/header/page";
 import Announcement from "@/components/announcement/page";
-import { ClerkProvider, RedirectToSignIn } from '@clerk/nextjs';
-import { useRouter } from 'next/navigation';
+import { ClerkProvider } from '@clerk/nextjs';
+import CookieConsent from "@/components/Cookies/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <CookieConsent /> {/* Include CookieConsent here */}
         </ClerkProvider>
       </body>
     </html>
