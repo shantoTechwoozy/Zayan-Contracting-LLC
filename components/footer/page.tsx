@@ -12,13 +12,13 @@ const Footer: React.FC = () => {
                     <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
-                            <Image
-    src={`/wlogo.png`}
-    alt="logo"
-    width={240}
-    height={60}
-    className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[240px] lg:max-w-[300px] dark:hidden"
-/>
+                                <Image
+                                    src={`/wlogo.png`}
+                                    alt="logo"
+                                    width={240}
+                                    height={60}
+                                    className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[240px] lg:max-w-[300px]"
+                                />
 
 
                                 <p className="mt-4 text-gray-300">

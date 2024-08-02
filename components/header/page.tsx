@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md p-2">
+    <header className="bg-white shadow-md">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                 alt="logo"
                 width={240}
                 height={60}
-                className="w-[50px] sm:w-48 md:w-64 lg:w-[90px] dark:hidden"
+                className="w-[50px] sm:w-48 md:w-64 lg:w-[90px]"
               />
             </a>
           </div>
