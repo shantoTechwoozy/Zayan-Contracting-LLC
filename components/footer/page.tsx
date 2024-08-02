@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
                     <div className="text-teal-600">
                     </div>
 
-                    <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+                    <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-4 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
                                 <Image
@@ -113,29 +113,6 @@ const Footer: React.FC = () => {
                                 </li>
                             </ul>
                         </div>
-
-                        <div className="col-span-2 sm:col-span-1">
-                            <p className="font-medium text-gray-400">Legal</p>
-
-                            <ul className="mt-6 space-y-4 text-sm">
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Accessibility </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Returns Policy </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Refund Policy </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Hiring Statistics </a>
-                                </li>
-                            </ul>
-                        </div>
-
                         <div className="col-span-2 sm:col-span-1">
                             <p className="font-medium text-gray-400">Projects</p>
 

@@ -30,7 +30,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <CookieConsent /> {/* Include CookieConsent here */}
+          <CookieConsent /> 
         </ClerkProvider>
       </body>
     </html>
