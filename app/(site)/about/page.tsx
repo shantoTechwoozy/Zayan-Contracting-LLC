@@ -35,7 +35,7 @@ const About: React.FC = () => {
             Our Mission
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Our mission is to provide top-notch construction and renovation services that exceed our clients' expectations. We aim to create lasting relationships built on trust, integrity, and exceptional service. Our focus is on delivering projects on time and within budget while maintaining the highest standards of quality and safety.
+            Our mission is to provide top-notch construction and renovation services that exceed our client&apos;s expectations. We aim to create lasting relationships built on trust, integrity, and exceptional service. Our focus is on delivering projects on time and within budget while maintaining the highest standards of quality and safety.
           </p>
         </section>
 
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           <ul className="list-disc list-inside text-gray-700 space-y-4">
             <li>Integrity: We conduct our business with honesty and transparency.</li>
             <li>Quality: We are committed to delivering high-quality workmanship.</li>
-            <li>Customer Satisfaction: We prioritize our clients' needs and strive to exceed their expectations.</li>
+            <li>Customer Satisfaction: We prioritize our client&apos;s needs and strive to exceed their expectations.</li>
             <li>Safety: We adhere to the highest safety standards on all our projects.</li>
           </ul>
         </section>
