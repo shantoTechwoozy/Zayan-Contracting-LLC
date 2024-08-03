@@ -2,6 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 
 const Projects: React.FC = () => {
+    const images = [
+        "/project/p-1.jpg",
+        "/project/p-2.jpg",
+        "/project/p-3.jpg",
+        "/project/p-4.jpg",
+        "/project/p-5.jpg",
+        "/project/p-6.jpg",
+        "/g4.jpg"
+    ];
+
     return (
         <section className="bg-white py-8">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,58 +21,30 @@ const Projects: React.FC = () => {
                     ></div>
 
                     <span className="relative z-10 bg-white px-6 text-3xl font-bold text-gray-900 text-center">
-                        Our Project
+                        Our Projects
                     </span>
                 </span>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="relative w-full h-64">
-                        <Image
-                            src="/project/p-1.jpg"
-                            alt="Image 1"
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
-                    <div className="relative w-full h-64">
-                        <Image
-                            src="/project/p-2.jpg"
-                            alt="Image 2"
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
-                    <div className="relative w-full h-64">
-                        <Image
-                            src="/project/p-3.jpg"
-                            alt="Image 3"
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
-                    <div className="relative w-full h-64">
-                        <Image
-                            src="/project/p-4.jpg"
-                            alt="Image 4"
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
-
-                    <div className="relative col-span-full w-full">
-                        <div className="relative w-full h-64">
+                    {images.slice(0, -1).map((src, index) => (
+                        <div key={index} className="relative w-full h-64 overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:rotate-2">
                             <Image
-                                src="/g4.jpg"
-                                alt="Image 5"
+                                src={src}
+                                alt={`Project Image ${index + 1}`}
                                 layout="fill"
                                 objectFit="cover"
-                                className="w-full rounded-lg shadow-lg"
+                                className="w-full h-full"
                             />
                         </div>
+                    ))}
+                    <div className="relative col-span-full w-full h-64 overflow-hidden rounded-lg shadow-lg">
+                        <Image
+                            src={images[images.length - 1]}
+                            alt="Full Width Project Image"
+                            layout="fill"
+                            objectFit="cover"
+                            className="w-full h-full"
+                        />
                     </div>
                 </div>
             </div>

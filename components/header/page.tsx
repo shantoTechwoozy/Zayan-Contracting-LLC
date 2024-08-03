@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md lg:p-2">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -42,6 +42,9 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-900" href="/projects"> Projects </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/about"> About </a>
                 </li>
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-900" href="/contact"> Contact </a>
@@ -121,6 +124,9 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a className="text-gray-700 hover:text-gray-900" href="/projects"> Projects </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/about"> About </a>
             </li>
             <li>
               <a className="text-gray-700 hover:text-gray-900" href="/contact"> Contact </a>

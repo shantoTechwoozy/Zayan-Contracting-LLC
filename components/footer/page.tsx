@@ -29,30 +29,7 @@ const Footer: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-
-                        <div className="col-span-2 lg:col-span-3 lg:flex lg:justify-end lg:items-start">
-                            <form className="w-full lg:w-auto">
-                                <div className="relative max-w-lg">
-                                    <label className="sr-only" htmlFor="email"> Email </label>
-
-                                    <input
-                                        className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
-                                        id="email"
-                                        type="email"
-                                        placeholder="john@doe.com"
-                                    />
-
-                                    <button
-                                        className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
-                                    >
-                                        Subscribe
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-
-
-                        <div className="col-span-2 sm:col-span-1">
+                        <div className="col-span-2 sm:col-span-1 lg:mt-56">
                             <p className="font-medium text-gray-400">Services</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
@@ -78,58 +55,75 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
 
-                        <div className="col-span-2 sm:col-span-1">
+                        <div className="col-span-2 sm:col-span-1 lg:mt-56">
                             <p className="font-medium text-gray-400">Company</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> About </a>
+                                    <a href="/about" className="text-gray-400 transition hover:opacity-75"> About </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Meet the Team </a>
+                                    <a href="/" className="text-gray-400 transition hover:opacity-75"> Meet the Team </a>
                                 </li>
-
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Accounts Review </a>
+                                    <a href="/" className="text-gray-400 transition hover:opacity-75"> Our Projects </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="col-span-2 sm:col-span-1">
-                            <p className="font-medium text-gray-400">Helpful Links</p>
+                        <div className="col-span-2 sm:col-span-1 lg:mt-56">
+                            <p className="font-medium text-gray-400">Legal</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Contact </a>
+                                    <a href="/contact" className="text-gray-400 transition hover:opacity-75"> Contact </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> FAQs </a>
+                                    <a href="/privacypolicy" className="text-gray-400 transition hover:opacity-75"> Privacy Policy </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Live Chat </a>
+                                    <a href="/termsofservice" className="text-gray-400 transition hover:opacity-75"> Terms of Service </a>
                                 </li>
+                                <li>
+                                    <a href="/disclaimers" className="text-gray-400 transition hover:opacity-75"> Disclaimers </a>
+                                </li>
+                                <li>
+                                    <a href="/cookiepolicy" className="text-gray-400 transition hover:opacity-75">Cookie Policy </a>
+                                </li>
+                                <li>
+                                    <a href="/careers" className="text-gray-400 transition hover:opacity-75">Careers </a>
+                                </li>
+
                             </ul>
                         </div>
-                        <div className="col-span-2 sm:col-span-1">
-                            <p className="font-medium text-gray-400">Projects</p>
 
-                            <ul className="mt-6 space-y-4 text-sm">
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Complete Projects </a>
-                                </li>
+                        <div className="col-span-2 lg:col-span-3 lg:flex lg:justify-end lg:items-start">
+                            <form className="w-full lg:w-auto">
+                                <div className="relative max-w-lg">
+                                    <label className="sr-only" htmlFor="email"> Email </label>
 
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Ongoing Projects </a>
-                                </li>
+                                    <input
+                                        className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
+                                        id="email"
+                                        type="email"
+                                        placeholder="john@doe.com"
+                                    />
 
-                                <li>
-                                    <a href="#" className="text-gray-400 transition hover:opacity-75"> Running Projects </a>
-                                </li>
-                            </ul>
+                                    <button
+                                        className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                                    >
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+
+
+
+
 
                         <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
                             <li>
@@ -238,15 +232,15 @@ const Footer: React.FC = () => {
                                     <h5 className='text-white font-semibold'>Techwoozy LLC</h5> </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
+                                <a href="/termsofservice" className="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
                             </li>
 
                             <li>
-                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
+                                <a href="/privacypolicy" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
                             </li>
 
                             <li>
-                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Cookies </a>
+                                <a href="/cookiepolicy" className="text-gray-500 transition hover:opacity-75"> Cookies </a>
                             </li>
 
                         </ul>
