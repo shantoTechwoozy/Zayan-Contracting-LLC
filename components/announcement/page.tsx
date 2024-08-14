@@ -5,7 +5,6 @@ const Announcement: React.FC = () => {
         <div className="flex items-center justify-between gap-4 bg-green-600 px-4 py-3 text-white">
             <p className="text-sm font-medium">
                 Are You Looking For Contractor?
-                <a href="#" className="inline-block underline">Check out now!</a>
             </p>
 
             <a

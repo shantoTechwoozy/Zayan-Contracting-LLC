@@ -9,7 +9,7 @@ const About: React.FC = () => {
       {/* Banner Section */}
       <div className="relative w-full h-64 md:h-80">
         <Image
-          src="/bnr.jpg" // Replace with the path to your image
+          src="/about.jpg" // Replace with the path to your image
           alt="Zayan Contracting Banner"
           layout="fill"
           objectFit="cover"
